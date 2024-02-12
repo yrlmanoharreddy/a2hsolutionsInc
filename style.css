@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navi {
+  position: fixed;
+  
+}
+
+.header-wrapper {
+    /* background-position: right center; */
+    height: 630px;
+}
+nav {
+    padding: 15px 20px;
+    color:black;
+    margin-left: auto;
+}
+.header-nav {
+    top: 0;
+    right: 0;
+    left:0;
+    background-color: rgba(22, 22, 23, .8);
+    height: 90px;
+    display: flex; 
+    justify-content: flex-end;
+    
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 18px; 
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.phr {
+    margin-top: 90px;
+    color:white;
+    text-align: right; 
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    background-image: url('test.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%; 
+}
+
+
+
+.address {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 2px;
+}
+
+.phone-info {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 2px;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 2px;
+}
+
+.small-image {
+    width: 100px;
+    height: 70px;
+    
+}
+
+
+.company-contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+footer {
+    background-color: black; 
+    color: white;
+    padding: 20px;
+}
+
+/* main {
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+
+
+
+h1 {
+  font-family: "Montserrat Medium";
+  max-width: 40ch;
+  text-align: right;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+#id1 {
+  opacity: 0;
+  font-size: 40px;
+  filter: blur(4px);
+  color: black;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+span:nth-child(1) {
+  animation: fade-in 1.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 2.5s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 3.5s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 4.5s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+
+
+.heading-container {
+  background-color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* Ensure the service container is displayed as flex */
+.service-container {
+  display: flex;
+  justify-content: center; /* Align items horizontally in the center */
+  align-items: center; /* Align items vertically in the center */
+  padding-top: 40px;
+}
+
+.left-services p:hover{
+  color:grey;
+}
+
+.right-services p:hover{
+  color:grey;
+}
+
+/* Left Services */
+.left-services {
+  flex: 1; /* Takes up available space */
+  text-align: right; /* Align items to the right */
+  font-weight: bold;
+}
+
+.left-services a {
+  padding-right: 50px;
+}
+.right-services a {
+  padding-left: 50px;
+}
+/* Circle */
+.circle {
+  flex: 0 0 auto; /* Do not grow or shrink, maintain initial size */
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  background-color: #d8dbd5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center; /* Align content horizontally in the center */
+  align-items: center; /* Align content vertically in the center */
+  color: black;
+  font-size: 36px;
+
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+/* Right Services */
+.right-services {
+  flex: 1; /* Takes up available space */
+  font-weight: bold;
+}
+
+
+.carrer-section {
+  background-color: rgb(168, 165, 165);
+  color:white;
+}
+
+.services {
+  display: flex;
+  justify-content: flex-end; /* Horizontally align */
+  padding-right: 0;
+  padding-top: 60px;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+.career-description {
+  flex: 1;
+  padding-right: 20px; /* Adjust spacing between content and image */
+  padding-top: 10px;
+  border-radius: 30px;
+  background-color: #f2f2f2;
+}
+
+.career-image {
+  flex: 1;
+  text-align: center; /* Center the image */
+  height: 500px;
+  padding-top: 20px;
+}
+
+.career-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-section {
+  padding: 5px 0; /* Adjust padding as needed */
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f2f2f2; /* Grey background color */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 30px;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center; /* Center the image */
+}
+
+.about-image img {
+  max-width: 100%;
+  height: 100%;
+}
+
+
+.company-logo {
+  height: 300px;
+  width: 200px;
+}
+
+
+
+
