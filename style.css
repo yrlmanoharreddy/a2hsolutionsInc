@@ -319,11 +319,31 @@ span:nth-child(4) {
 
 /* Example media query for smaller screens */
 @media screen and (max-width: 768px) {
-  /* Adjust the navigation menu for smaller screens */
   .header-nav ul {
+      display: none; /* Hide the menu items by default */
       flex-direction: column;
+      background-color: #333; /* Add a background color for better visibility */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+  }
+
+  .header-nav ul.open {
+      display: flex; /* Show the menu items when the menu is open */
+  }
+
+  .header-nav ul li {
+      margin-bottom: 10px;
+  }
+
+  .header-nav .menu-icon {
+      display: block; /* Show the hamburger icon */
+      cursor: pointer;
   }
 }
+
 
 
 
